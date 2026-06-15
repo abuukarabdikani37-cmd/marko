@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merca Primary & Secondary School (MPSS)</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:#003366;
+    color:#fff;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('students.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffd700;
+    color:#003366;
+    padding:12px 28px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    color:#003366;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+.about{
+    text-align:center;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.principal-container{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:30px;
+    align-items:center;
+}
+
+.principal-container img{
+    width:100%;
+    border-radius:15px;
+}
+
+.principal-text p{
+    line-height:1.8;
+}
+
+.teachers-grid,
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.teacher-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.teacher-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    object-position: top ;
+
+}
+
+.teacher-card h3{
+    margin-top:15px;
+}
+
+.teacher-card p{
+    padding-bottom:20px;
+    color:#666;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+.form-container{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    max-width:800px;
+    margin:auto;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    background:#003366;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.contact-info{
+    text-align:center;
+    line-height:2;
+}
+
+footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:38px;
+    }
+
+    .principal-container{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MPSS</div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#principal">Principal</a></li>
+            <li><a href="#teachers">Teachers</a></li>
+            <li><a href="#gallery">students</a></li>
+            <li><a href="#admission">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Merca Primary & Secondary School</h1>
+        <p>Inspiring Excellence, Building Futures, Creating Leaders.</p>
+        <a href="#admission" class="btn">Apply Now</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Our School</h2>
+
+    <div class="about">
+            <p>
+            Merca Primary & Secondary School (MPSS) is dedicated to
+            providing quality education that empowers students with
+            knowledge, skills, and strong moral values. Our goal is
+            to create a safe and inspiring learning environment where
+            every student can achieve academic excellence and personal growth.
+            </p>
+
+            <br>
+
+            <p>
+            Through experienced teachers, modern teaching methods,
+            and a commitment to student success, MPSS prepares learners
+            to become responsible citizens and future leaders.
+             </p>
+        </div>
+    </section>
+    <div style="margin-top:30px;">
+    <button onclick="showSchoolInfo()" class="btn">
+        Learn More About MPSS
+    </button>
+</div>
+
+<div id="schoolInfo"
+     style="display:none; margin-top:25px; background:#fff; padding:25px; border-radius:10px;">
+
+    <h3>Merca Primary & Secondary School (MPSS)</h3>
+
+    <p>
+        MPSS provides quality primary and secondary education,
+        helping students build knowledge, discipline, leadership,
+        and strong moral values.
+    </p>
+
+    <h4 style="margin-top:15px;">What We Do</h4>
+
+    <ul style="line-height:2;">
+        <li>Primary Education</li>
+        <li>Secondary Education</li>
+        <li>Academic Excellence Programs</li>
+        <li>Sports Activities</li>
+        <li>Leadership Development</li>
+        <li>Student Guidance and Support</li>
+    </ul>
+
+</div>
+
+<!-- PRINCIPAL -->
+<section id="principal">
+    <h2 class="section-title">Principal's Message</h2>
+
+    <div class="principal-container">
+
+        <img src="management.jpg"
+             alt="Principal">
+
+        <div class="principal-text">
+            <h3>Welcome to MPSS</h3>
+            <br>
+            <p>
+                 Kusoo dhowaada Dugsiga Hoose iyo Sare ee Merca (MPSS). Mudane Mohamed Xasan Hooleyste, oo ah maamulaha dugsiga, wuxuu si weyn ugu heellan yahay horumarinta tayada waxbarashada, kobcinta anshaxa ardayda, iyo dhisidda jawi waxbarasho oo dhiirrigeliya guusha. Hoggaankiisa wanaagsan, dadaalkiisa joogtada ah, iyo aragtidiisa fog ayaa door weyn ka qaatay horumarka iyo sumcadda dugsiga. Wuxuu aaminsan yahay in waxbarashadu tahay furaha guusha, isla markaana arday kasta uu leeyahay awood uu ku gaari karo himilooyinkiisa haddii la siiyo fursad iyo hagid wanaagsan.
+
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TEACHERS -->
+<section id="teachers">
+    <h2 class="section-title">Our Teachers</h2>
+
+    <div class="teachers-grid">
+
+        <div class="teacher-card">
+            <img src="teach.jpg">
+            <h3> Teacher camow</h3>
+            <p>Science Teacher</p>
+        </div>
+
+        <div class="teacher-card">
+            <img src="casal-wabasal.jpg">
+            <h3> teacher casal </h3>
+            <p>chemistry Teacher</p>
+        </div>
+
+        <div class="teacher-card">
+            <img src="carabi.jpg">
+            <h3>Teache salah</h3>
+            <p>Islamic Teacher</p>
+        </div>
+
+        <div class="teacher-card">
+            <img src="mohamed.jpg">
+            <h3> Teacher mohamed abdikani </h3>
+            <p>biology Teacher</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2 class="section-title">School students</h2>
+
+    <div class="gallery-grid">
+
+        <img src="abuubakar.jpg">
+        <img src="c:\Users\abuuk\OneDrive\Desktop\Pictures\Camera Roll\FB_IMG_1770188012279.jpg">
+        <img src="ziiii.jpg">
+        <img src="coofinho.jpg">
+        <img src="muqtaar.jpg">
+        <img src="baafow.jpg">
+
+    </div>
+</section>
+
+<!-- ADMISSIONS -->
+<section id="admission">
+    <h2 class="section-title">Admissions Form</h2>
+
+    <div class="form-container">
+
+        <form>
+
+            <input type="text" placeholder="Student Full Name" required>
+
+            <input type="date" required>
+
+            <select required>
+                <option>Select Grade</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 4</option>
+                <option>Grade 5</option>
+                <option>Grade 6</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Form 1</option>
+                <option>Form 2</option>
+                <option>Form 3</option>
+                <option>Form 4</option>
+            </select>
+
+            <input type="text" placeholder="Parent/Guardian Name">
+
+            <input type="tel" placeholder="Phone Number">
+
+            <input type="email" placeholder="Email Address">
+
+            <textarea rows="5" placeholder="Additional Information"></textarea>
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-info">
+        <p><strong>School:</strong> Merca Primary & Secondary School (MPSS)</p>
+        <p><strong>Location:</strong> Merca, Lower Shabelle, Somalia</p>
+        <p><strong>Phone:</strong> +252 613096729</p>
+        <p><strong>Email:</strong> info@mpss.edu.so</p>
+        <p><strong>Working Hours:</strong> Saturday - wednesday | 7:00 AM - 12:00 PM</p>
+    </div>
+</section>
+    <footer>
+        <p>© 2026 Dugsiga Hoose iyo Sare ee Merca (MPSS). Xuquuqda oo dhan way dhowran tahay.</p>
+
+        <p style="margin-top:10px;">
+            Website Designed & Developed By <strong>Abuukar Abdikani</strong>
+        </p>
+    </footer>
+
+
+    <script>
+function showSchoolInfo() {
+    const info = document.getElementById("schoolInfo");
+
+    if(info.style.display === "none"){
+        info.style.display = "block";
+    } else {
+        info.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
